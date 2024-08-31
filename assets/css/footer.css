@@ -1,0 +1,312 @@
+footer .offers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.426vw;
+}
+
+footer .offers .items {
+  display: flex;
+  gap: 1.054vw;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f4f6fa;
+  width: 15.709vw;
+  height: 5.64vw;
+}
+
+footer .offers .items .img-container {
+  padding: 1.054vw 0 1.054vw 1.054vw;
+  width: 3.163vw;
+}
+
+footer .offers .items .img-container img {
+  width: 100%;
+}
+
+footer .offers .items .items-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.264vw;
+}
+
+footer .offers .items .items-content h4 {
+  font-size: 0.949vw;
+  font-weight: 600;
+  color: #242424;
+}
+
+footer .offers .items .items-content p {
+  font-size: 0.843vw;
+  color: #adadad;
+}
+
+/* links */
+footer .links {
+  display: grid;
+  grid-template-columns: 15.814vw 10.227vw 10.227vw 10.227vw 10.227vw 16.342vw;
+  justify-content: space-between;
+  margin-bottom: 2.372vw;
+}
+
+footer .links .first-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .links .first-column img {
+  width: 11.334vw;
+}
+
+footer .links .first-column p {
+  font-size: 0.791vw;
+  line-height: 1.3vw;
+}
+
+footer .links .first-column p.template {
+  font-size: 0.896vw;
+}
+
+footer .links .first-column p.address::before {
+  content: url(../images/footer/location.svg);
+}
+
+footer .links .first-column p.call::before {
+  content: url(../images/footer/contact.svg);
+}
+
+footer .links .first-column p.email::before {
+  content: url(../images/footer/email.svg);
+}
+
+footer .links .first-column p.work-hours::before {
+  content: url(../images/footer/clock.svg);
+}
+
+footer .links .middle-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: flex-start;
+}
+
+footer .links .middle-column h4 {
+  font-family: quicksand;
+  font-size: 1.265vw;
+  line-height: 1.5vw;
+}
+
+footer .links .middle-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.68vw;
+  align-items: flex-start;
+}
+
+footer .links .middle-column ul li a {
+  font-size: 0.791vw;
+  color: var(--gray);
+}
+
+footer .links .last-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .links .last-column h4 {
+  font-family: quicksand;
+  font-size: 1.265vw;
+  line-height: 1.5vw;
+}
+
+footer .links .last-column p {
+  font-size: 0.791vw;
+}
+
+footer .links .last-column .dl-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.633vw;
+}
+
+footer .links .last-column img.app-store,
+footer .links .last-column img.google-play {
+  width: 6.747vw;
+}
+
+footer .links .last-column img.payment {
+  width: 11.808vw;
+}
+
+/* rights and contact ways */
+footer .rights-contact {
+  border-top: 1px solid #bce3c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.581vw 0;
+}
+
+/* rights */
+footer .rights-contact .rights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .rights-contact .rights p {
+  color: #7e7e7e;
+  font-size: 0.738vw;
+}
+
+footer .rights-contact .rights span {
+  color: #3bb77e;
+  font-weight: 600;
+}
+
+/* phone number */
+footer .rights-contact .phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.74vw;
+}
+
+footer .rights-contact .phone-number .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.633vw;
+}
+
+footer .rights-contact .phone-number .items .img {
+  width: 1.581vw;
+}
+
+footer .rights-contact .phone-number .items .img img {
+  width: 100%;
+}
+
+footer .rights-contact .phone-number .items .num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .rights-contact .phone-number .items h4 {
+  font-size: 1.371vw;
+  color: #3bb77e;
+}
+
+footer .rights-contact .phone-number .items p {
+  font-size: 0.633vw;
+  color: #7e7e7e;
+  letter-spacing: 0.9px;
+}
+
+/* social media */
+footer .rights-contact .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .rights-contact .social-media .follow {
+  display: flex;
+  align-items: center;
+  gap: 0.774vw;
+}
+
+footer .rights-contact .social-media .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.264vw;
+}
+
+footer .rights-contact .social-media .icons img {
+  width: 1.581vw;
+}
+
+footer .rights-contact .social-media .offer p {
+  font-size: 0.738vw;
+  color: #7e7e7e;
+}
+
+/* -------- media query -------- */
+@media screen and (max-width: 762px) {
+  footer .links {
+    grid-template-columns: 45% 25% 30%;
+    gap: 20px;
+  }
+  footer .links .last-column h4,
+  footer .links .middle-column h4 {
+    font-size: 3.15vw;
+    line-height: 3.78vw;
+  }
+  footer .links .middle-column ul li a {
+    font-size: 1.969vw;
+    line-height: 3.78vw;
+  }
+  footer .links .first-column img {
+    width: 19.685vw;
+  }
+  footer .links .first-column p,
+  footer .links .last-column p {
+    font-size: 1.969vw;
+    line-height: 3.78vw;
+  }
+  footer .links .first-column p.template {
+    font-size: 2.231vw;
+    line-height: 3.78vw;
+  }
+  footer .links .last-column .dl-link img {
+    width: 16.798vw;
+  }
+  footer .links .last-column .dl-link {
+    flex-direction: column;
+  }
+  footer .links .last-column .payment,
+  footer .rights-contact .phone-number,
+  footer .offers .items .items-content p {
+    display: none;
+  }
+  footer .rights-contact .rights p,
+  footer .rights-contact .social-media .offer p {
+    font-size: 1.837vw;
+    line-height: 3.78vw;
+  }
+  footer .rights-contact .social-media .follow h4 {
+    font-size: 2.1vw;
+    line-height: 3.15vw;
+  }
+  footer .rights-contact .social-media .follow .icons a img {
+    width: 3.937vw;
+  }
+  footer .offers .items .img-container {
+    width: auto;
+  }
+  footer .offers .items .img-container img {
+    width: 10.5vw;
+  }
+  footer .offers {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 3vw;
+  }
+  footer .offers .items .items-content h4 {
+    font-size: 2.1vw;
+    line-height: 2.52vw;
+    text-align: center;
+  }
+  footer .offers .items {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    gap: 2.5vw;
+    align-items: center;
+    padding: 5.381vw 4.987vw;
+  }
+}

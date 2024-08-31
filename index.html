@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nest MART & GROCERY</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <script
+      src="https://kit.fontawesome.com/a345d83004.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="allHeader">
+        <!-- top navbar -->
+        <div class="top-nav">
+          <ul class="top-left-nav">
+            <li><a class="right-brdr" href="about.html">About Us</a></li>
+            <li><a class="right-brdr" href="#">My Account</a></li>
+            <li><a class="right-brdr" href="#">Wishlist</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+          <ul class="top-right-nav">
+            <li class="right-brdr">
+              Need help? Call Us:<span>+ 1800 900</span>
+            </li>
+            <li class="right-brdr">
+              <select class="nav-selector" name="language" id="language">
+                <option value="english" selected>English</option>
+                <option value="french">French</option>
+                <option value="persian">Persian</option>
+              </select>
+            </li>
+            <li>
+              <select class="nav-selector" name="unite" id="unite">
+                <option value="usd" selected>USD</option>
+                <option value="eur">EUR</option>
+                <option value="rial">RIAL</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <!-- center navbar -->
+        <div class="center-nav">
+          <div class="container">
+            <a href="#" id="hamburgerMenu" class="mobileView" onclick="hamburgerMenu()"
+              ><img
+                class="hamburger-menu mobileView"
+                src="./assets/images/nav-icons/hamburger-menu.svg"
+                alt=""
+            /></a>
+            <!-- logo -->
+            <div class="logo mobileView">
+              <img
+                src="./assets/images/logo.svg"
+                alt="Nest mart & grocery logo"
+              />
+            </div>
+            <!-- search box -->
+            <form class="search-box">
+              <div class="category right-brdr">
+                <select name="categories" id="categories" class="quicksand">
+                  <option value="All Categories" selected>
+                    All Categories
+                  </option>
+                  <option value="Cake & Milk">Cake & Milk</option>
+                  <option value="Coffes & Teas">Coffes & Teas</option>
+                  <option value="Pet Foods">Pet Foods</option>
+                  <option value="Vegetables">Vegetables</option>
+                </select>
+              </div>
+              <div class="search-input">
+                <input type="search" placeholder="Search for items..." />
+                <button type="button">
+                  <img src="./assets/images/nav-icons/search.svg" alt="" />
+                </button>
+              </div>
+            </form>
+            <!-- location -->
+            <div class="location">
+              <div class="icon-container">
+                <img
+                  class="icon"
+                  src="./assets/images/nav-icons/location.svg"
+                  alt=""
+                />
+              </div>
+              <select name="location" id="location" class="quicksand">
+                <option value="Your Location">Your Location</option>
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+              </select>
+            </div>
+            <!-- auth -->
+            <div class="auth">
+              <div class="auth-items">
+                <div class="auth-icon">
+                  <img
+                    src="./assets/images/nav-icons/compare.svg"
+                    alt="compare icon"
+                  />
+                  <img
+                    class="notif"
+                    src="./assets/images/nav-icons/3.svg"
+                    alt=""
+                  />
+                </div>
+                <a href="">Compare</a>
+              </div>
+              <div class="auth-items mobileView">
+                <div class="auth-icon">
+                  <img
+                    src="./assets/images/nav-icons/heart.svg"
+                    alt="compare icon"
+                  />
+                  <img
+                    class="notif"
+                    src="./assets/images/nav-icons/6.svg"
+                    alt=""
+                  />
+                </div>
+                <a href="">Wishlist</a>
+              </div>
+              <div class="auth-items mobileView">
+                <div class="auth-icon">
+                  <img
+                    src="./assets/images/nav-icons/cart.svg"
+                    alt="compare icon"
+                  />
+                  <img
+                    class="notif"
+                    src="./assets/images/nav-icons/2.svg"
+                    alt=""
+                  />
+                </div>
+                <a href="">Cart</a>
+              </div>
+              <div class="auth-items">
+                <div class="auth-icon">
+                  <img
+                    src="./assets/images/nav-icons/user.svg"
+                    alt="compare icon"
+                  />
+                </div>
+                <a href="">Account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bottom navbar -->
+        <div class="bottom-nav">
+          <!-- category -->
+          <div class="category quicksand">
+            <img
+              class="before"
+              src="./assets/images/nav-icons/before.svg"
+              alt=""
+            />
+            <span>Browse All Categories</span>
+            <img
+              class="arrow"
+              src="./assets/images/nav-icons/dropdown-white.svg"
+              alt=""
+            />
+          </div>
+          <!-- menu -->
+          <div class="menu quicksand">
+            <ul class="navmenu" id="menu">
+              <li><a href="">Deals</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Vendors</a></li>
+              <li><a href="">Megamenu</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- call info -->
+          <div class="call-info">
+            <div class="info-image-container">
+              <img src="./assets/images/nav-icons/headphone.svg" alt="" />
+            </div>
+            <div class="info-content-container">
+              <h4 class="quicksand">1900 - 8888</h4>
+              <p>24/7 Support Center</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- offer slider -->
+      <section class="offer-slider">
+        <!-- slides -->
+        <div class="slides">
+          <!-- slide 01 -->
+          <div id="slide1" class="subscribe-top active">
+            <div class="subscribe-content">
+              <h2>Fresh Vegetables Big discount</h2>
+              <p>Save up to 50% off on your first order</p>
+              <form action="" method="get">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+            <div class="img">
+              <img src="./assets/images/main/bg-slide-01.png" alt="" />
+            </div>
+          </div>
+
+          <!-- slide 02 -->
+          <div id="slide2" class="subscribe-top">
+            <div class="subscribe-content">
+              <h2>Pure Coffe Big discount</h2>
+              <p>Save up to 50% off on your first order</p>
+              <form action="" method="get">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+            <div class="img">
+              <img src="./assets/images/main/bg-slide-021.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- tab icons -->
+        <div class="tab-icon">
+          <i
+            onclick="setSlide('slide1', 1)"
+            id="icon-slide1"
+            class="fa-solid fa-circle dot active"
+          ></i>
+          <i
+            onclick="setSlide('slide2', 2)"
+            id="icon-slide2"
+            class="fa-solid fa-circle dot"
+          ></i>
+        </div>
+        <!-- arrow icons -->
+        <div class="arrow-icon">
+          <div class="icon">
+            <i onclick="previousSlide()" class="fa-solid fa-chevron-left"></i>
+            <i onclick="nextSlide()" class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+      <!-- featured categories -->
+      <section class="featured">
+        <!-- title -->
+        <div class="category quicksand">
+          <h4>Featured Categories</h4>
+          <a href="">Cake & Milk</a>
+          <a href="">Coffes & Teas</a>
+          <a href="">Pet Foods</a>
+          <a href="">Vegetables</a>
+          <!-- arrow icons -->
+          <div class="arrow-icon">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <!-- products -->
+        <div class="items-container">
+          <div class="items bg-01">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-01.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Vegetables</h4>
+            <p class="product-count">72 items</p>
+          </div>
+
+          <div class="items bg-02">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-02.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Strawberry</h4>
+            <p class="product-count">36 items</p>
+          </div>
+
+          <div class="items bg-03">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-03.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Snack</h4>
+            <p class="product-count">56 items</p>
+          </div>
+
+          <div class="items bg-04">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-04.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Black plum</h4>
+            <p class="product-count">123 items</p>
+          </div>
+
+          <div class="items bg-05">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-05.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Custard Apple</h4>
+            <p class="product-count">34 items</p>
+          </div>
+
+          <div class="items bg-06">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-06.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Red Apple</h4>
+            <p class="product-count">54 items</p>
+          </div>
+
+          <div class="items bg-07">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-07.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Peach</h4>
+            <p class="product-count">14 items</p>
+          </div>
+
+          <div class="items bg-08">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-08.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Oganic Kiwi</h4>
+            <p class="product-count">28 items</p>
+          </div>
+
+          <div class="items bg-09">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-09.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Cake & Milk</h4>
+            <p class="product-count">26 items</p>
+          </div>
+
+          <div class="items bg-10">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./assets/images/main/cat-10.png" alt="" />
+              </div>
+            </div>
+            <h4 class="product-name">Coffe & Tea</h4>
+            <p class="product-count">89 items</p>
+          </div>
+        </div>
+      </section>
+      <!-- banner categories -->
+      <section class="category-banner">
+        <div class="item banner1">
+          <img src="./assets/images/main/banner-1.png" alt="" />
+          <div class="content">
+            <h3 class="quicksand">Everyday Fresh & Clean with Our Products</h3>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="item banner2">
+          <img src="./assets/images/main/banner-2.png" alt="" />
+          <div class="content">
+            <h3 class="quicksand">Make your Breakfast Healthy and Easy</h3>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="item banner3">
+          <img src="./assets/images/main/banner-3.png" alt="" />
+          <div class="content">
+            <h3 class="quicksand">The best Organic Products Online</h3>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+      </section>
+      <!-- popular products -->
+      <section class="popular-products">
+        <div class="tab-bar">
+          <div class="title">
+            <h2 class="quicksand">Popular Products</h2>
+          </div>
+          <div class="tabs">
+            <ul>
+              <li><a href="">All</a></li>
+              <li><a href="">Milks & Dairies</a></li>
+              <li><a href="">Coffes & Teas</a></li>
+              <li><a href="">Pet Foods</a></li>
+              <li><a href="">Meats</a></li>
+              <li><a href="">Vegetables</a></li>
+              <li><a href="">Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products">
+          <div class="item">
+            <span class="option" id="offer-item01">Hot</span>
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-1.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Snack</span>
+              <h4 class="product-name quicksand">
+                Seeds of Change Orrganic Quinoa, Brown, & Red Rice
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>NestFood</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$28.85  <del class="offer">$32.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="option" id="offer-item02">Sale</span>
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-2.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Hodo Foods</span>
+              <h4 class="product-name quicksand">
+                All Natural Italian-Style Chicken Meatballs
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(3.5)</span>
+              </div>
+              <p class="producer">By <span>Stouffer</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$52.85  <del class="offer">$55.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="option" id="offer-item03">New</span>
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-3.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Snack</span>
+              <h4 class="product-name quicksand">
+                Angie's Boomchickapop Sweet & Salty Kettle Corn
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>StarKist</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$48.85  <del class="offer">$52.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <!-- <span class="option" id="offer-item04">Hot</span> -->
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-4.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Vegetables</span>
+              <h4 class="product-name quicksand">
+                Foster Farms Takeout Crispy Classic Buffalo Wings
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>NestFood</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$17.85  <del class="offer">$19.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="option" id="offer-item05">-14%</span>
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-5.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Pet Foods</span>
+              <h4 class="product-name quicksand">
+                Blue Diamond Almonds Lightly Salted Vegetables
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>NestFood</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$23.85  <del class="offer">$25.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <!-- <span class="option" id="offer-item06">Hot</span> -->
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-6.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Hodo Foods</span>
+              <h4 class="product-name quicksand">
+                Chobani Complete Vanilla Greek Yogurt
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>NestFood</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$54.85  <del class="offer">$55.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <!-- <span class="option" id="offer-item07">Hot</span> -->
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-7.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Meats</span>
+              <h4 class="product-name quicksand">
+                Canada Dry Ginger Ale - 2 L Bottle - 200ml - 400g
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>NestFood</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$32.85  <del class="offer">$33.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="option" id="offer-item08">Sale</span>
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-8.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Snack</span>
+              <h4 class="product-name quicksand">
+                Encore Seafoods SStuffed Alaskan Salmon
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>NestFood</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$35.85  <del class="offer">$37.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="option" id="offer-item09">Hot</span>
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-9.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Coffes</span>
+              <h4 class="product-name quicksand">
+                Groton's Beer Battered Fish Fillets with soft paper
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(4.0)</span>
+              </div>
+              <p class="producer">By <span>Old El Paso</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$23.85  <del class="offer">$25.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <!-- <span class="option" id="offer-item10">Hot</span> -->
+            <img
+              class="product-img"
+              src="./assets/images/main/popular products/product-10.png"
+              alt=""
+            />
+            <div class="product-detail">
+              <span class="category">Cream</span>
+              <h4 class="product-name quicksand">
+                Haagen-Dazs Caramel Cone Ice Cream Ketchup
+              </h4>
+              <div class="rank-box">
+                <img
+                  class="star"
+                  src="./assets/images/main/star-svgrepo-com.svg"
+                  alt="rank"
+                />
+                <span class="rank">(2.0)</span>
+              </div>
+              <p class="producer">By <span>Tyson</span></p>
+              <div class="buy">
+                <pre
+                  class="price quicksand"
+                >$22.85  <del class="offer">$24.8</del></pre>
+                <div class="cart-btn">
+                  <img src="./assets/images/main/cart.svg" alt="" />
+                  <button type="button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- subscribe -->
+      <section class="subscribe-bottom">
+        <div class="subscribe-content">
+          <h3>Stay home & get your daily needs from our shop</h3>
+          <p>Start You'r Daily Shopping with <span>Nest Mart</span></p>
+          <form action="" method="get">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <img
+          class="banner-img"
+          src="./assets/images/footer/Footer-banner-img.png"
+          alt=""
+        />
+      </section>
+    </main>
+
+    <footer class="container">
+      <!-- offers -->
+      <section class="offers">
+        <div class="items">
+          <div class="img-container">
+            <img src="./assets/images/footer/icon-1.svg.png" alt="best price" />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Best price & offers</h4>
+            <p>Orders $50 or more</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-2.svg.png"
+              alt="Free delivery"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Free delivery</h4>
+            <p>24/7 amazing services</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-3.svg.png"
+              alt="Great daily deal"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Great daily deal</h4>
+            <p>When you sign up</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-4.svg.png"
+              alt="Wide assortment"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Wide assortment</h4>
+            <p>Mega Discounts</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-5.svg.png"
+              alt="Easy returns"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Easy returns</h4>
+            <p>Within 30 days</p>
+          </div>
+        </div>
+      </section>
+      <!-- links -->
+      <section class="links">
+        <!-- contact section -->
+        <div class="first-column">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <p class="template">Awesome grocery store website template</p>
+          <p class="address">
+            <b>Address :</b> 5171 W Campbell Ave undefined Kent, Utah 53127
+            United States
+          </p>
+          <p class="call"><b>Call Us :</b> +98 (911) 571 - 2075</p>
+          <p class="email"><b>Email :</b> mahyar.kaliji@gmail.com</p>
+          <p class="work-hours"><b>Hours :</b> 10:00 - 18:00, Mon - Sat</p>
+        </div>
+        <div class="middle-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Delivery Information</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Support Center</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="middle-column">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">View Cart</a></li>
+            <li><a href=""> My Wishlist</a></li>
+            <li><a href="">Track My Order</a></li>
+            <li><a href="">Help Ticket</a></li>
+            <li><a href="">Shopping Details</a></li>
+            <li><a href="">Compare Products</a></li>
+          </ul>
+        </div>
+        <div class="middle-column">
+          <h4>Corporate</h4>
+          <ul>
+            <li><a href="">Become a Vendor</a></li>
+            <li><a href="">Affliate Program</a></li>
+            <li><a href="">Fram Business</a></li>
+            <li><a href="">Farm Careers</a></li>
+            <li><a href="">Our Suppliers</a></li>
+            <li><a href="">Accessibility</a></li>
+            <li><a href="">Promotions</a></li>
+          </ul>
+        </div>
+        <div class="middle-column">
+          <h4>Popular</h4>
+          <ul>
+            <li><a href="">Mlik & Flavoured Milk</a></li>
+            <li><a href="">Butter and Margarine</a></li>
+            <li><a href="">Eggs Substitutes</a></li>
+            <li><a href="">Marmalades</a></li>
+            <li><a href="">Sour Cream and Dips</a></li>
+            <li><a href="">Tea & Kombucha</a></li>
+            <li><a href="">Cheese</a></li>
+          </ul>
+        </div>
+        <div class="last-column">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="dl-link">
+            <img
+              class="app-store"
+              src="./assets/images/footer/app-store.png"
+              alt=""
+            />
+            <img
+              class="google-play"
+              src="./assets/images/footer/google-play.png"
+              alt=""
+            />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img
+            class="payment"
+            src="./assets/images/footer/payment-method.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- rights and contact ways -->
+      <section class="rights-contact">
+        <div class="rights">
+          <p>&copy 2022, <span>Nest</span> - HTML Ecommerce Template</p>
+          <p>All rights reserved</p>
+        </div>
+        <div class="phone-number">
+          <div class="items">
+            <div class="img">
+              <img src="./assets/images/footer/phone-call.svg.svg" alt="" />
+            </div>
+            <div class="num">
+              <h4>1900 - 6666</h4>
+              <p>Working 8:00 - 22:00</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/images/footer/phone-call.svg.svg" alt="" />
+            </div>
+            <div class="num">
+              <h4>1900 - 8888</h4>
+              <p>24/7 Support Center</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icons">
+              <a href="">
+                <img src="./assets/images/footer/facebook.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/twiter.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/instagram.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/pinterest.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/youtube.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="offer">
+            <p>Up to 15% discount on your first subscribe</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

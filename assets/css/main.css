@@ -1,0 +1,56 @@
+/* fonts definition */
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+
+}
+
+@font-face{
+    font-family: quicksand;
+    src: url(../fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+/* base styles */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: lato;
+    font-size: 11.5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header div.top-nav select {
+    border-style: none;
+}
+
+.container{
+    margin: 0 8.197vw;
+
+}
+
+.quicksand {
+    font-family: quicksand;
+}
+
+::placeholder{
+    color: var(--phgray);
+}
+
+:root {
+    --dark: #253D4E;
+    --green: #3BB77E;
+    --gray: #7E7E7E;
+    --phgray: #838383;
+    --star: #FDC040;
+    --borderColor: #ECECEC;
+}

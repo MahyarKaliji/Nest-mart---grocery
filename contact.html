@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Nest MART & GROCERY</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <!-- top navbar -->
+      <div class="top-nav">
+        <ul class="top-left-nav">
+          <li><a class="right-brdr" href="about.html">About Us</a></li>
+          <li><a class="right-brdr" href="#">My Account</a></li>
+          <li><a class="right-brdr" href="#">Wishlist</a></li>
+          <li><a href="#">Order Tracking</a></li>
+        </ul>
+        <ul class="top-right-nav">
+          <li class="right-brdr">Need help? Call Us:<span>+ 1800 900</span></li>
+          <li class="right-brdr">
+            <select class="nav-selector" name="language" id="language">
+              <option value="english" selected>English</option>
+              <option value="french">French</option>
+              <option value="persian">Persian</option>
+            </select>
+          </li>
+          <li>
+            <select class="nav-selector" name="unite" id="unite">
+              <option value="usd" selected>USD</option>
+              <option value="eur">EUR</option>
+              <option value="rial">RIAL</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <!-- center navbar -->
+      <div class="center-nav">
+        <div class="container">
+          <!-- logo -->
+          <div class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Nest mart & grocery logo"
+            />
+          </div>
+          <!-- search box -->
+          <form class="search-box">
+            <div class="category right-brdr">
+              <select name="categories" id="categories">
+                <option value="All Categories" selected>All Categories</option>
+                <option value="Cake & Milk">Cake & Milk</option>
+                <option value="Coffes & Teas">Coffes & Teas</option>
+                <option value="Pet Foods">Pet Foods</option>
+                <option value="Vegetables">Vegetables</option>
+              </select>
+            </div>
+            <div class="search-input">
+              <input type="search" placeholder="Search for items..." />
+              <button type="button">
+                <img src="./assets/images/nav-icons/search.svg" alt="" />
+              </button>
+            </div>
+          </form>
+          <!-- location -->
+          <div class="location">
+            <div class="icon-container">
+              <img
+                class="icon"
+                src="./assets/images/nav-icons/location.svg"
+                alt=""
+              />
+            </div>
+            <select name="location" id="location">
+              <option value="Your Location">Your Location</option>
+              <option value="Home">Home</option>
+              <option value="Office">Office</option>
+            </select>
+          </div>
+          <!-- auth -->
+          <div class="auth">
+            <div class="auth-items">
+              <div class="auth-icon">
+                <img
+                  src="./assets/images/nav-icons/compare.svg"
+                  alt="compare icon"
+                />
+                <img
+                  class="notif"
+                  src="./assets/images/nav-icons/3.svg"
+                  alt=""
+                />
+              </div>
+              <a href="">Compare</a>
+            </div>
+            <div class="auth-items">
+              <div class="auth-icon">
+                <img
+                  src="./assets/images/nav-icons/heart.svg"
+                  alt="compare icon"
+                />
+                <img
+                  class="notif"
+                  src="./assets/images/nav-icons/6.svg"
+                  alt=""
+                />
+              </div>
+              <a href="">Wishlist</a>
+            </div>
+            <div class="auth-items">
+              <div class="auth-icon">
+                <img
+                  src="./assets/images/nav-icons/cart.svg"
+                  alt="compare icon"
+                />
+                <img
+                  class="notif"
+                  src="./assets/images/nav-icons/2.svg"
+                  alt=""
+                />
+              </div>
+              <a href="">Cart</a>
+            </div>
+            <div class="auth-items">
+              <div class="auth-icon">
+                <img
+                  src="./assets/images/nav-icons/user.svg"
+                  alt="compare icon"
+                />
+              </div>
+              <a href="">Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom navbar -->
+      <div class="bottom-nav">
+        <!-- category -->
+        <div class="category">
+          <img
+            class="before"
+            src="./assets/images/nav-icons/before.svg"
+            alt=""
+          />
+          <span>Browse All Categories</span>
+          <img
+            class="arrow"
+            src="./assets/images/nav-icons/dropdown-white.svg"
+            alt=""
+          />
+        </div>
+        <!-- menu -->
+        <div class="menu">
+          <ul>
+            <li><a href="">Deals</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Vendors</a></li>
+            <li><a href="">Megamenu</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- call info -->
+        <div class="call-info">
+          <div class="info-image-container">
+            <img src="./assets/images/nav-icons/headphone.svg" alt="" />
+          </div>
+          <div class="info-content-container">
+            <h4>1900 - 888</h4>
+            <p>24/7 Support Center</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- help section -->
+      <section class="help">
+        <div class="how-can-help">
+          <h4 class="quicksand">How can help you ?</h4>
+          <h2 class="quicksand">Let us know how we can help you</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="help-items">
+          <div class="item">
+            <h4 class="quicksand">01. Visit Feedback</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+
+          <div class="item">
+            <h4 class="quicksand">02. Employer Services</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+
+          <div class="item">
+            <h4 class="quicksand">03. Billing Inquiries</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+
+          <div class="item">
+            <h4 class="quicksand">04. General Inquiries</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- address -->
+      <section class="address">
+        <div class="map">
+          <img src="./assets/images/contact/map.png" alt="" />
+          <div class="map-button">
+            <button type="button">+</button>
+            <button type="button">-</button>
+          </div>
+        </div>
+        <div class="our-address">
+          <div class="item">
+            <h4>Office</h4>
+            <div class="content">
+              <p>205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</p>
+              <p><span>Phone :</span> +98 (911) 571-2075</p>
+              <p><span>Email :</span> mahyar.kaliji@gmail.com</p>
+            </div>
+            <button>
+              <img src="./assets/images/contact/location.svg" alt="" />
+              View map
+            </button>
+          </div>
+
+          <div class="item">
+            <h4>Studio</h4>
+            <div class="content">
+              <p>205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</p>
+              <p><span>Phone :</span> +98 (911) 571-2075</p>
+              <p><span>Email :</span> mahyar.kaliji@gmail.com</p>
+            </div>
+            <button>
+              <img src="./assets/images/contact/location.svg" alt="" />
+              View map
+            </button>
+          </div>
+
+          <div class="item">
+            <h4>Shop</h4>
+            <div class="content">
+              <p>205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</p>
+              <p><span>Phone :</span> +98 (911) 571-2075</p>
+              <p><span>Email :</span> mahyar.kaliji@gmail.com</p>
+            </div>
+            <button>
+              <img src="./assets/images/contact/location.svg" alt="" />
+              View map
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form -->
+      <section class="contact-form container">
+        <div class="comment">
+          <div class="content">
+            <h4 class="quicksand">Contact form</h4>
+            <h3 class="quicksand">Drop Us a Line</h3>
+            <p>
+              Your email address will not be published. Required fields are
+              marked *
+            </p>
+          </div>
+          <form action="" method="get">
+            <div class="client-comment-box">
+              <input type="text" name="FirstName" placeholder="First Name" />
+              <input type="email" name="Email" placeholder="Your Email" />
+              <input type="tel" name="PhoneNumber" placeholder="Your Phone" />
+              <input type="text" name="Subject" placeholder="Subject" />
+              <div class="text-box">
+                <textarea name="client-comment" id="client-comment"></textarea>
+                <button class="quicksand" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="img">
+          <img src="./assets/images/contact/contact.png" alt="" />
+        </div>
+      </section>
+
+      <!-- subscribe -->
+      <section class="subscribe container">
+        <div class="subscribe-content">
+          <h3>Stay home & get your daily needs from our shop</h3>
+          <p>Start You'r Daily Shopping with <span>Nest Mart</span></p>
+          <form action="" method="get">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <img
+          class="banner-img"
+          src="./assets/images/contact/banner-13.png"
+          alt=""
+        />
+      </section>
+    </main>
+
+    <footer class="container">
+      
+      <!-- offers -->
+      <section class="offers">
+        <div class="items">
+          <div class="img-container">
+            <img src="./assets/images/footer/icon-1.svg.png" alt="best price" />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Best price & offers</h4>
+            <p>Orders $50 or more</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-2.svg.png"
+              alt="Free delivery"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Free delivery</h4>
+            <p>24/7 amazing services</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-3.svg.png"
+              alt="Great daily deal"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Great daily deal</h4>
+            <p>When you sign up</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-4.svg.png"
+              alt="Wide assortment"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Wide assortment</h4>
+            <p>Mega Discounts</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="img-container">
+            <img
+              src="./assets/images/footer/icon-5.svg.png"
+              alt="Easy returns"
+            />
+          </div>
+          <div class="items-content">
+            <h4 class="quicksand">Easy returns</h4>
+            <p>Within 30 days</p>
+          </div>
+        </div>
+      </section>
+      <!-- links -->
+      <section class="links">
+        <!-- contact section -->
+        <div class="first-column">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <p class="template">Awesome grocery store website template</p>
+          <p class="address">
+            <b>Address :</b> 5171 W Campbell Ave undefined Kent, Utah 53127
+            United States
+          </p>
+          <p class="call"><b>Call Us :</b> +98 (911) 571 - 2075</p>
+          <p class="email"><b>Email :</b> mahyar.kaliji@gmail.com</p>
+          <p class="work-hours"><b>Hours :</b> 10:00 - 18:00, Mon - Sat</p>
+        </div>
+        <div class="middle-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Delivery Information</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Support Center</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="middle-column">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">View Cart</a></li>
+            <li><a href=""> My Wishlist</a></li>
+            <li><a href="">Track My Order</a></li>
+            <li><a href="">Help Ticket</a></li>
+            <li><a href="">Shopping Details</a></li>
+            <li><a href="">Compare Products</a></li>
+          </ul>
+        </div>
+        <div class="middle-column">
+          <h4>Corporate</h4>
+          <ul>
+            <li><a href="">Become a Vendor</a></li>
+            <li><a href="">Affliate Program</a></li>
+            <li><a href="">Fram Business</a></li>
+            <li><a href="">Farm Careers</a></li>
+            <li><a href="">Our Suppliers</a></li>
+            <li><a href="">Accessibility</a></li>
+            <li><a href="">Promotions</a></li>
+          </ul>
+        </div>
+        <div class="middle-column">
+          <h4>Popular</h4>
+          <ul>
+            <li><a href="">Mlik & Flavoured Milk</a></li>
+            <li><a href="">Butter and Margarine</a></li>
+            <li><a href="">Eggs Substitutes</a></li>
+            <li><a href="">Marmalades</a></li>
+            <li><a href="">Sour Cream and Dips</a></li>
+            <li><a href="">Tea & Kombucha</a></li>
+            <li><a href="">Cheese</a></li>
+          </ul>
+        </div>
+        <div class="last-column">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="dl-link">
+            <img
+              class="app-store"
+              src="./assets/images/footer/app-store.png"
+              alt=""
+            />
+            <img
+              class="google-play"
+              src="./assets/images/footer/google-play.png"
+              alt=""
+            />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img
+            class="payment"
+            src="./assets/images/footer/payment-method.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- rights and contact ways -->
+      <section class="rights-contact">
+        <div class="rights">
+          <p>&copy 2022, <span>Nest</span> - HTML Ecommerce Template</p>
+          <p>All rights reserved</p>
+        </div>
+        <div class="phone-number">
+          <div class="items">
+            <div class="img">
+              <img src="./assets/images/footer/phone-call.svg.svg" alt="" />
+            </div>
+            <div class="num">
+              <h4>1900 - 6666</h4>
+              <p>Working 8:00 - 22:00</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/images/footer/phone-call.svg.svg" alt="" />
+            </div>
+            <div class="num">
+              <h4>1900 - 8888</h4>
+              <p>24/7 Support Center</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icons">
+              <a href="">
+                <img src="./assets/images/footer/facebook.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/twiter.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/instagram.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/pinterest.svg" alt=""
+              /></a>
+              <a href="">
+                <img src="./assets/images/footer/youtube.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="offer">
+            <p>Up to 15% discount on your first subscribe</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

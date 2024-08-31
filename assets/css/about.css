@@ -1,0 +1,429 @@
+main {
+  margin-bottom: 100px !important;
+}
+
+main section:first-child {
+  margin: 0 15.244vw;
+  padding-bottom: 2.636vw;
+}
+
+/* welcome */
+main .welcome {
+  display: flex;
+  justify-content: center;
+  gap: 2.53vw;
+  margin-bottom: 3vw;
+}
+
+main .welcome .main-img {
+  flex: 1;
+}
+
+main .welcome .main-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+main .welcome .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+main .welcome .content h2 {
+  color: #253d4e;
+  font-size: 2.109vw;
+  line-height: 2.53vw;
+  margin-bottom: 1.687vw;
+}
+
+main .welcome .content p {
+  color: var(--gray);
+  font-size: 0.843vw;
+  line-height: 1.265vw;
+  margin-bottom: 1.581vw;
+}
+
+main .welcome .content .sample-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.265vw;
+}
+
+main .welcome .content .sample-products img {
+  width: 10.121vw;
+}
+
+/* provide */
+main .provide {
+  text-align: center;
+  margin-bottom: 3.9vw;
+}
+
+main .provide h3 {
+  color: var(--dark);
+  font-size: 2.109vw;
+  line-height: 2.53vw;
+  margin-bottom: 2.109vw;
+}
+
+main .provide .our-provide {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.265vw;
+}
+
+main .provide .our-provide .item {
+  border: 1px solid #ececee;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.688vw 1.871vw 2.9vw;
+}
+
+main .provide .our-provide .item img {
+  width: 5.271vw;
+  margin-bottom: 1.95vw;
+}
+
+main .provide .our-provide .item h4 {
+  color: var(--dark);
+  font-size: 1.265vw;
+  line-height: 1.518vw;
+  margin-bottom: 1.634vw;
+}
+
+main .provide .our-provide .item p {
+  color: var(--gray);
+  font-size: 0.896vw;
+  line-height: 1.265vw;
+  margin-bottom: 1.792vw;
+}
+
+main .provide .our-provide .item a {
+  color: var(--green);
+  font-size: 0.843vw;
+  line-height: 1.265vw;
+}
+
+/* performance */
+main .performance {
+  display: flex;
+  margin-bottom: 2.636vw;
+  gap: 1.581vw;
+  padding: 0 0.633vw;
+}
+
+main .performance .img-box {
+  width: 40.518vw;
+}
+
+main .performance .img-box img {
+  margin: 0 1.581vw 0.369vw 0.633vw;
+  width: inherit;
+}
+
+main .performance .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 0.633vw;
+}
+
+main .performance .content h5 {
+  color: #b6b6b6;
+  font-size: 1.265vw;
+  line-height: 1.518vw;
+  margin-bottom: 0.949vw;
+}
+
+main .performance .content h3 {
+  color: var(--dark);
+  font-size: 2.53vw;
+  line-height: 3.036vw;
+  margin-bottom: 2.193vw;
+}
+
+main .performance .content p {
+  color: var(--gray);
+  font-size: 0.843vw;
+  line-height: 1.265vw;
+  margin-top: 1.845vw;
+}
+
+/* about */
+main .about {
+    display: flex;
+    align-items: center;
+}
+
+main .about .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.634vw;
+    align-items: flex-start;
+}
+
+main .about .item h4 {
+    color: var(--dark);
+    font-size: 1.687vw;
+    line-height: 2.024vw;
+}
+
+main .about .item p {
+    color: var(--gray);
+    font-size: .843vw;
+    line-height: 1.265vw;
+}
+
+/* statistics */
+main .statistics {
+    /* background-image: url('../images/about/Main.png');
+    background-size: cover; */
+    position: relative;
+    margin: 0 8.171vw 2.636vw;
+}
+
+main .statistics img {
+    width: 100%;
+    border-radius: 15px;
+    /* filter: (100%); */
+}
+
+/* main .statistics::before {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(red, 0, 0, .8);
+    z-index: 10;
+} */
+
+main .statistics .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+main .statistics .filter {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(75, 103, 90, .8);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+main .statistics .content .item {
+    font-size: x-large;
+    z-index: 20;
+    font-family: quicksand;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .statistics .content .item h6 {
+    font-size: 3.795vw;
+    line-height: 4.555vw;
+}
+
+main .statistics .content .item h5 {
+    font-size: 1.265vw;
+    line-height: 1.518vw;
+}
+
+/* our team */
+main .team-info {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    margin: 0 15.287vw;
+    /* grid-template-rows: 3.848vw auto; */
+}
+
+main .team-info h3.title {
+    grid-column: 1/4;
+    text-align: center;
+    color: var(--dark);
+    font-size: 2.109vw;
+    line-height: 2.53vw;
+    margin-bottom: 3.374vw;
+}
+
+main .team-info .content {
+    padding: 0 0 0 .633vw;
+}
+
+main .team-info .content h5 {
+    color: var(--green);
+    font-size: .843vw;
+    line-height: 1.012vw;
+    margin-bottom: .158vw;
+}
+
+main .team-info .content h3 {
+    color: var(--dark);
+    font-size: 2.53vw;
+    line-height: 3.036vw;
+    margin-bottom: 1.665vw;
+}
+
+main .team-info .content p {
+    color: var(--gray);
+    font-size: .843vw;
+    line-height: 1.265vw;
+    margin-bottom: 1.845vw;
+}
+
+main .team-info .content button {
+    color: #fff;
+    background-color: var(--green);
+    font-size: .738vw;
+    line-height: 1.1vw;
+    padding: .738vw 1.634vw;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10.279vw;
+}
+
+main .team-info .profile {
+    position: relative;
+}
+
+main .team-info .profile .img-box {
+    width: 21.31vw;
+
+}
+
+
+main .team-info .profile .img-box img {
+    width: inherit;
+    border-radius: 15px;
+}
+
+main .team-info .profile .person {
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.4vw 4.1vw;
+    bottom: 6.5vw;
+    left: 2.8vw;
+}
+
+main .team-info .profile .person h4 {
+    font-size: 1.265vw;
+    line-height: 1.518vw;
+    color: var(--dark);
+    margin-bottom: .306vw;
+}
+
+main .team-info .profile .person p {
+    font-size: .896vw;
+    line-height: 1.265vw;
+    color: var(--gray);
+    margin-bottom: 1.212vw;
+}
+
+main .team-info .profile .person .social-media {
+    
+}
+
+main .team-info .profile .person .social-media a img {
+    width: 1.5vw;
+}
+
+
+
+
+/* subscribe */
+main .subscribe {
+  background: url(../images/footer/Footer-banner-bg.png);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  padding: 4.428vw 4.112vw;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 2.526vw;
+}
+
+main .subscribe .subscribe-content {
+  width: 27.907vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.054vw;
+  align-items: flex-start;
+}
+
+main .subscribe .subscribe-content h3 {
+  font-size: 2.109vw;
+  color: #253d4e;
+  line-height: 2.53vw;
+  text-align: justify;
+}
+
+main .subscribe .subscribe-content p {
+  font-size: 0.949vw;
+  line-height: 1.265vw;
+  color: var(--gray);
+  margin-bottom: 1.371vw;
+}
+
+main .subscribe .subscribe-content p span {
+  color: var(--green);
+}
+
+main .subscribe .subscribe-content form {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+main .subscribe .subscribe-content form input[type="email"] {
+  border: none;
+  padding: 1.186vw 0 1.186vw 3.057vw;
+  border-radius: 50px;
+}
+
+main .subscribe .subscribe-content form button {
+  border: none;
+  background-color: var(--green);
+  border-radius: 50px;
+  padding: 1.16vw 2.109vw;
+  font-size: 0.843vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+main .subscribe .banner-img {
+  position: absolute;
+  bottom: 0;
+  right: 2.636vw;
+  width: 28.782vw;
+}
+
+
+
+/* -------- media query -------- */
+@media screen and (max-width: 762px) {
+  main .team-info.team-info::child {
+    display: flex;
+    flex-direction: column;
+  }
+}
